@@ -3,7 +3,7 @@ package com.github.hexagonoframework.core.exception;
 /**
  * Interface para tipo de erro 
  */
-interface ErrorType {
+public interface ErrorType {
 
     /**
      * Retorna o pattern da mensagem a ser interpolado
