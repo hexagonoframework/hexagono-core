@@ -1,5 +1,7 @@
 package com.github.hexagonoframework.core;
 
+import static java.util.Objects.requireNonNull;
+
 import java.util.Objects;
 
 public abstract class ValueObject<T> {
@@ -7,6 +9,7 @@ public abstract class ValueObject<T> {
     private final T value;
 
     public ValueObject(final T value) {
+        requireNonNull(value);
         this.value = value;
     }
 
