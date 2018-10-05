@@ -55,6 +55,11 @@ public class ValueObjectTest {
         vo = new StringValueObject(value);
         assertFalse(vo.equals(new Object()));
     }
+    
+    @Test(expected = NullPointerException.class)
+    public void nullable() {
+        new StringValueObject(null);
+    }
 
     private static class StringValueObject extends ValueObject<String> {
 
